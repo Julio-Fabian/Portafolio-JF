@@ -1,0 +1,18 @@
+﻿
+@model HomeIndexViewModel
+
+@{
+    // codigo c# dentro de html.
+    ViewData["Title"] = "Home Page";
+}
+
+<!--Banner principal presentacion del programador-->
+
+<partial name="_Presentacion" /> <!--Vista parcial de la presentacion.-->
+
+<!--Habilidades/Conocimientos-->
+
+<partial name="_Habilidades"/>
+
+<!--Lista cuadriculada de todos los proyectos.-->
+<partial name="_ListadoProyectos" model="Model.Proyectos"/>

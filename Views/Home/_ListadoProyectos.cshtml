@@ -1,0 +1,14 @@
+﻿
+@model IEnumerable<Proyecto> // lista "Model" con todos los proyectos.
+
+@if (Model != null)
+{
+    <div class="text-center" style="padding-top: 6rem;">
+        <h1>Mis trabajos recientes.</h1>
+        <p>Una pequeña recopilacion de mis trabajos mas recientes.</p>
+    </div>
+
+
+    <partial name="_VerProyectos" model="Model"/>
+}
+
