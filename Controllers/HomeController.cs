@@ -35,7 +35,7 @@ public class HomeController : Controller
         var model = new HomeIndexViewModel();
         var proyectos = _repo.GetProyectos();
 
-        model.Proyectos = proyectos;
+        //model.Proyectos = proyectos; // segun veo ya no es necesario.
 
         return View(proyectos);
     }
@@ -57,7 +57,7 @@ public class HomeController : Controller
 
         await servicioEmail.Enviar(contactoViewModel);
 
-        return RedirectToAction("Gracias"); 
+        return RedirectToAction("Gracias"); // <-- Aqui llamamos a "IActionResult Gracias()"
     }
 
     public IActionResult Gracias() // redireccion http de contacto ---> gracias

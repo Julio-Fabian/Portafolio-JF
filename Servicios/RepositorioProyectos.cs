@@ -4,7 +4,7 @@ namespace Portafolio.Servicios
 {
     public interface IRepositorioProyectos
     {
-        public List<Proyecto> GetProyectos();
+        public List<Proyecto> GetProyectos(); // para que sea standar el metodo.
     }
 
     public class RepositorioProyectos: IRepositorioProyectos
